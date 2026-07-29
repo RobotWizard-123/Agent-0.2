@@ -1,0 +1,68 @@
+:root {
+  color-scheme: dark;
+  --graphite-950: #080d12;
+  --graphite-900: #0b1117;
+  --blueprint-850: #101b24;
+  --blueprint-800: #14232e;
+  --blueprint-700: #1b3442;
+  --steel-500: #65808d;
+  --steel-300: #9fb2ba;
+  --mist-100: #dce7eb;
+  --paper-50: #f0f5f6;
+  --busbar-copper: #d38a46;
+  --signal-cyan: #50b9bd;
+  --status-green: #67c58a;
+  --status-amber: #e4b350;
+  --status-coral: #ed6f67;
+  --line: rgba(159, 178, 186, 0.18);
+  --line-strong: rgba(159, 178, 186, 0.34);
+  --shadow-deep: 0 24px 60px rgba(0, 0, 0, 0.28);
+  --font-display: "Bahnschrift SemiCondensed", "Microsoft YaHei UI", sans-serif;
+  --font-body: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+  --font-data: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+  --radius-small: 5px;
+  --radius-panel: 10px;
+  --transition-fast: 160ms ease;
+}
+
+* { box-sizing: border-box; }
+
+html { min-width: 320px; background: var(--graphite-950); }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(80, 185, 189, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(80, 185, 189, 0.018) 1px, transparent 1px),
+    var(--graphite-900);
+  background-size: 24px 24px;
+  color: var(--mist-100);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: 0.015em; }
+h1 { margin-bottom: 0; font-size: clamp(1.8rem, 3.2vw, 2.8rem); font-weight: 650; }
+h2 { margin-bottom: 0; font-size: clamp(1.25rem, 2vw, 1.7rem); }
+h3 { margin-bottom: 0; font-size: 1.05rem; }
+
+:focus-visible {
+  outline: 2px solid var(--signal-cyan);
+  outline-offset: 3px;
+}
+
+::selection { color: var(--graphite-950); background: var(--signal-cyan); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
