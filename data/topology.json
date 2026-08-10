@@ -1,0 +1,46 @@
+{
+  "room": {
+    "id": "ROOM-01",
+    "name": "实验室机房",
+    "server_power_limit_w": 200000,
+    "unknown_feed_capacity_w": 80000,
+    "confirmed_feed_capacity_w": 200000
+  },
+  "power_branches": [
+    {
+      "id": "PBR-LEFT",
+      "label": "左侧强电支路",
+      "capacity_w": 100000,
+      "conservative_capacity_w": 100000,
+      "cabinet_ids": ["CAB-01", "CAB-02", "CAB-03", "CAB-04", "CAB-05", "CAB-06", "CAB-07", "CAB-08", "CAB-09", "CAB-10"]
+    },
+    {
+      "id": "PBR-RIGHT",
+      "label": "右侧强电支路",
+      "capacity_w": 150000,
+      "conservative_capacity_w": 150000,
+      "cabinet_ids": ["NET-01", "NET-02", "CAB-11", "CAB-12", "CAB-13", "CAB-14", "CAB-15", "CAB-16", "CAB-17", "CAB-18", "CAB-19", "CAB-20"]
+    }
+  ],
+  "network": {
+    "external_uplink": "10G光纤接入",
+    "core": {
+      "id": "CORE-01",
+      "name": "核心交换机",
+      "uplink": "10G",
+      "ports": 48
+    },
+    "access_switches": [
+      { "id": "ASW-01", "name": "接入交换机 1", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-01", "CAB-02"] },
+      { "id": "ASW-02", "name": "接入交换机 2", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-03", "CAB-04"] },
+      { "id": "ASW-03", "name": "接入交换机 3", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-05", "CAB-06"] },
+      { "id": "ASW-04", "name": "接入交换机 4", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-07", "CAB-08"] },
+      { "id": "ASW-05", "name": "接入交换机 5", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-09", "CAB-10"] },
+      { "id": "ASW-06", "name": "接入交换机 6", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-11", "CAB-12"] },
+      { "id": "ASW-07", "name": "接入交换机 7", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-13", "CAB-14"] },
+      { "id": "ASW-08", "name": "接入交换机 8", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-15", "CAB-16"] },
+      { "id": "ASW-09", "name": "接入交换机 9", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-17", "CAB-18"] },
+      { "id": "ASW-10", "name": "接入交换机 10", "uplink": "10Gx2", "downlink": "1Gx48", "downlink_ports": 48, "connected_cabinet_ids": ["CAB-19", "CAB-20"] }
+    ]
+  }
+}
