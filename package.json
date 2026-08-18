@@ -1,0 +1,20 @@
+{
+  "name": "datacenter-mgr",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal machine-room management MVP with constraint-driven deployment checks.",
+  "scripts": {
+    "clear:rack-data": "node scripts/clear-rack-backend-data.js",
+    "reset:demo": "node scripts/reset-demo-data.js",
+    "test": "node --test",
+    "test:e2e": "node scripts/run-e2e.js",
+    "test:solver": "node scripts/run-solver-tests.js",
+    "test:all": "npm run test && npm run test:e2e",
+    "start": "node --env-file-if-exists=.env server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "playwright": "1.61.1"
+  }
+}

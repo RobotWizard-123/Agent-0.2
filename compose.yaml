@@ -1,0 +1,47 @@
+services:
+  app:
+    build:
+      context: .
+    image: datacenter-agent:v0.2
+    restart: unless-stopped
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      SESSION_SECRET: ${SESSION_SECRET:?SESSION_SECRET is required}
+      APP_ADMIN_PASSWORD: ${APP_ADMIN_PASSWORD:?APP_ADMIN_PASSWORD is required}
+      APP_VIEWER_PASSWORD: ${APP_VIEWER_PASSWORD:?APP_VIEWER_PASSWORD is required}
+      TRUST_PROXY_HTTPS: ${TRUST_PROXY_HTTPS:-false}
+      AGENT_BASE_URL: ${AGENT_BASE_URL:-}
+      AGENT_API_KEY: ${AGENT_API_KEY:-}
+      AGENT_MODEL: ${AGENT_MODEL:-}
+      AGENT_TIMEOUT_MS: ${AGENT_TIMEOUT_MS:-8000}
+      CP_SAT_ENABLED: ${CP_SAT_ENABLED:-true}
+      CP_SAT_TIMEOUT_MS: ${CP_SAT_TIMEOUT_MS:-2500}
+      CP_SAT_PYTHON: /opt/venv/bin/python
+    ports:
+      - "${APP_BIND_ADDRESS:-127.0.0.1}:${APP_PORT:-3000}:3000"
+    volumes:
+      - datacenter-runtime:/app/data/runtime
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/health/ready"]
+      interval: 20s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+
+  nginx:
+    image: nginx:1.27-alpine
+    profiles: ["https"]
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./deploy/certs:/etc/nginx/certs:ro
+
+volumes:
+  datacenter-runtime:
