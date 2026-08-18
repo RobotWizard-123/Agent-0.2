@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "room": {
+    "id": "L5-A2-08",
+    "name": "L5-A2-08 机房",
+    "rack_count": 22,
+    "server_rack_count": 20,
+    "network_rack_count": 2,
+    "data_source": "design"
+  },
+  "power_sources": [
+    {
+      "id": "JG1",
+      "name": "服务器机柜配电 JG1",
+      "calculated_load_w": 96000,
+      "rack_ids": [
+        "CAB-01",
+        "CAB-02",
+        "CAB-03",
+        "CAB-04",
+        "CAB-05",
+        "CAB-06",
+        "CAB-07",
+        "CAB-08",
+        "CAB-09",
+        "CAB-10"
+      ],
+      "data_source": "design"
+    },
+    {
+      "id": "JG2",
+      "name": "服务器机柜配电 JG2",
+      "calculated_load_w": 104000,
+      "rack_ids": [
+        "CAB-11",
+        "CAB-12",
+        "CAB-13",
+        "CAB-14",
+        "CAB-15",
+        "CAB-16",
+        "CAB-17",
+        "CAB-18",
+        "CAB-19",
+        "CAB-20"
+      ],
+      "data_source": "design"
+    },
+    {
+      "id": "KT1",
+      "name": "网络机柜配电 KT1",
+      "calculated_load_w": null,
+      "rack_ids": [
+        "CAB-21",
+        "CAB-22"
+      ],
+      "data_source": "unknown"
+    }
+  ],
+  "racks": [
+    {
+      "id": "CAB-01",
+      "name": "服务器机柜 01",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-01",
+      "pdu_ids": [
+        "CAB-01-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 1,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-02",
+      "name": "服务器机柜 02",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-01",
+      "pdu_ids": [
+        "CAB-02-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 2,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-03",
+      "name": "服务器机柜 03",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-02",
+      "pdu_ids": [
+        "CAB-03-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 3,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-04",
+      "name": "服务器机柜 04",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-02",
+      "pdu_ids": [
+        "CAB-04-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 4,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-05",
+      "name": "服务器机柜 05",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-03",
+      "pdu_ids": [
+        "CAB-05-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 5,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-06",
+      "name": "服务器机柜 06",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-03",
+      "pdu_ids": [
+        "CAB-06-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 6,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-07",
+      "name": "服务器机柜 07",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-04",
+      "pdu_ids": [
+        "CAB-07-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 7,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-08",
+      "name": "服务器机柜 08",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-04",
+      "pdu_ids": [
+        "CAB-08-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 8,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-09",
+      "name": "服务器机柜 09",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-05",
+      "pdu_ids": [
+        "CAB-09-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 9,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 20000,
+      "breaker": "C63/2P",
+      "cable": "3×16"
+    },
+    {
+      "id": "CAB-10",
+      "name": "服务器机柜 10",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-05",
+      "pdu_ids": [
+        "CAB-10-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 10,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG1",
+      "design_power_w": 20000,
+      "breaker": "C63/2P",
+      "cable": "3×16"
+    },
+    {
+      "id": "CAB-11",
+      "name": "服务器机柜 11",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-06",
+      "pdu_ids": [
+        "CAB-11-PDU"
+      ],
+      "floor_position": {
+        "row": 1,
+        "column": 11,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 20000,
+      "breaker": "C63/2P",
+      "cable": "3×16"
+    },
+    {
+      "id": "CAB-12",
+      "name": "服务器机柜 12",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-06",
+      "pdu_ids": [
+        "CAB-12-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 11,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 20000,
+      "breaker": "C63/2P",
+      "cable": "3×16"
+    },
+    {
+      "id": "CAB-13",
+      "name": "服务器机柜 13",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-07",
+      "pdu_ids": [
+        "CAB-13-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 10,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 20000,
+      "breaker": "C63/2P",
+      "cable": "3×16"
+    },
+    {
+      "id": "CAB-14",
+      "name": "服务器机柜 14",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-07",
+      "pdu_ids": [
+        "CAB-14-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 9,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-15",
+      "name": "服务器机柜 15",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-08",
+      "pdu_ids": [
+        "CAB-15-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 8,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-16",
+      "name": "服务器机柜 16",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-08",
+      "pdu_ids": [
+        "CAB-16-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 7,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-17",
+      "name": "服务器机柜 17",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-09",
+      "pdu_ids": [
+        "CAB-17-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 6,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-18",
+      "name": "服务器机柜 18",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-09",
+      "pdu_ids": [
+        "CAB-18-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 5,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-19",
+      "name": "服务器机柜 19",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-10",
+      "pdu_ids": [
+        "CAB-19-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 4,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-20",
+      "name": "服务器机柜 20",
+      "role": "server",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 24,
+      "network_switch_id": "ASW-10",
+      "pdu_ids": [
+        "CAB-20-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 3,
+        "data_source": "demo"
+      },
+      "data_source": "design",
+      "source_id": "JG2",
+      "design_power_w": 10000,
+      "breaker": "C40/2P",
+      "cable": "3×10"
+    },
+    {
+      "id": "CAB-21",
+      "alias": "NET-01",
+      "name": "网络机柜 21",
+      "role": "network",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 48,
+      "source_id": "KT1",
+      "design_power_w": 5000,
+      "breaker": "C40/2P",
+      "cable": "3×10",
+      "pdu_ids": [
+        "CAB-21-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 2,
+        "data_source": "demo"
+      },
+      "data_source": "design"
+    },
+    {
+      "id": "CAB-22",
+      "alias": "NET-02",
+      "name": "网络机柜 22",
+      "role": "network",
+      "height_u": 42,
+      "dividers_u": [
+        12,
+        22,
+        32
+      ],
+      "reserve_u_per_layer": 2,
+      "max_weight_kg": 420,
+      "network_port_limit": 48,
+      "source_id": "KT1",
+      "design_power_w": 5000,
+      "breaker": "C40/2P",
+      "cable": "3×10",
+      "pdu_ids": [
+        "CAB-22-PDU"
+      ],
+      "floor_position": {
+        "row": 2,
+        "column": 1,
+        "data_source": "demo"
+      },
+      "data_source": "design"
+    }
+  ],
+  "devices": [],
+  "power_connections": [],
+  "network_connections": [],
+  "topology": {
+    "power": {
+      "pdus": [
+        {
+          "id": "CAB-01-PDU",
+          "rack_id": "CAB-01",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-02-PDU",
+          "rack_id": "CAB-02",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-03-PDU",
+          "rack_id": "CAB-03",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-04-PDU",
+          "rack_id": "CAB-04",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-05-PDU",
+          "rack_id": "CAB-05",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-06-PDU",
+          "rack_id": "CAB-06",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-07-PDU",
+          "rack_id": "CAB-07",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-08-PDU",
+          "rack_id": "CAB-08",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-09-PDU",
+          "rack_id": "CAB-09",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-10-PDU",
+          "rack_id": "CAB-10",
+          "source_id": "JG1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-11-PDU",
+          "rack_id": "CAB-11",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-12-PDU",
+          "rack_id": "CAB-12",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-13-PDU",
+          "rack_id": "CAB-13",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-14-PDU",
+          "rack_id": "CAB-14",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-15-PDU",
+          "rack_id": "CAB-15",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-16-PDU",
+          "rack_id": "CAB-16",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-17-PDU",
+          "rack_id": "CAB-17",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-18-PDU",
+          "rack_id": "CAB-18",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-19-PDU",
+          "rack_id": "CAB-19",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-20-PDU",
+          "rack_id": "CAB-20",
+          "source_id": "JG2",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-21-PDU",
+          "rack_id": "CAB-21",
+          "source_id": "KT1",
+          "outlet_count": 24,
+          "data_source": "design"
+        },
+        {
+          "id": "CAB-22-PDU",
+          "rack_id": "CAB-22",
+          "source_id": "KT1",
+          "outlet_count": 24,
+          "data_source": "design"
+        }
+      ]
+    },
+    "network": {
+      "external_uplink": {
+        "label": "10G光纤接入",
+        "data_source": "design"
+      },
+      "core": {
+        "id": "CORE-01",
+        "name": "核心交换机",
+        "uplink": "10G",
+        "ports": 48,
+        "data_source": "design"
+      },
+      "access_switches": [
+        {
+          "id": "ASW-01",
+          "name": "接入交换机 01",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-01",
+            "CAB-02"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-02",
+          "name": "接入交换机 02",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-03",
+            "CAB-04"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-03",
+          "name": "接入交换机 03",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-05",
+            "CAB-06"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-04",
+          "name": "接入交换机 04",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-07",
+            "CAB-08"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-05",
+          "name": "接入交换机 05",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-09",
+            "CAB-10"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-06",
+          "name": "接入交换机 06",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-11",
+            "CAB-12"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-07",
+          "name": "接入交换机 07",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-13",
+            "CAB-14"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-08",
+          "name": "接入交换机 08",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-15",
+            "CAB-16"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-09",
+          "name": "接入交换机 09",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-17",
+            "CAB-18"
+          ],
+          "data_source": "design"
+        },
+        {
+          "id": "ASW-10",
+          "name": "接入交换机 10",
+          "uplink": "10Gx2",
+          "downlink": "1Gx48",
+          "downlink_ports": 48,
+          "connected_rack_ids": [
+            "CAB-19",
+            "CAB-20"
+          ],
+          "data_source": "design"
+        }
+      ]
+    },
+    "redundancy": {
+      "status": "unverified",
+      "data_source": "unknown"
+    }
+  },
+  "plans": [],
+  "alarms": [],
+  "diagnoses": [],
+  "changes": [],
+  "audit": [],
+  "demo_conditions": [],
+  "settings": {
+    "placement": {
+      "default_strategy_id": "balanced_optimal"
+    }
+  },
+  "service_health": {
+    "model": {
+      "status": "unknown",
+      "checked_at": null
+    },
+    "collector": {
+      "status": "not_connected",
+      "checked_at": null
+    }
+  }
+}
